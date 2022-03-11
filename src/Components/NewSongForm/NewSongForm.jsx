@@ -37,7 +37,7 @@ const NewSongForm = (props) => {
             <br></br>
             <label for='title'>Release Date: </label>
             <br></br>
-            <input type='text' value={releaseDate} onChange={(event) => setReleaseDate(event.target.value)}/>
+            <input placeholder='YYYY-MM-DD' type='text' value={releaseDate} onChange={(event) => setReleaseDate(event.target.value)}/>
             <br></br>
             <label for='title'>Genre: </label>
             <br></br>
