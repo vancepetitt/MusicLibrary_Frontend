@@ -10,6 +10,7 @@ const NewSongForm = (props) => {
 
     //listener function to take the form data and create a new song when even (submit). Listing the hook variables gathers the input data for use.
     function handleSubmit(event) {
+        event.preventDefault(); //prevents page refresh.
         let newSong = {
             title: title,
             artist: artist,
