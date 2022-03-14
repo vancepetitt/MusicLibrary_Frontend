@@ -1,3 +1,6 @@
+Music Library project's front end for devCode Camp.
+The primary focus of the Music Library React (Frontend) project is to further familiarize yourself with React.js and grow in confidence regarding the understanding of making API calls with Postman as well as in our React applications utilizing the Axios HTTP library.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
