@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const GetAllSongs = (props) => {
     
-    <h1>test</h1>
+    console.log('hello')
 }
 
 export default GetAllSongs

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import NewSongForm from "./Components/NewSongForm/NewSongForm";
 import GetAllSongs from "./Components/GetAllSongs/GetAllSongs";
+import DisplaySongs from "./Components/DisplaySongs/DisplaySongs";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
     <div>
       <h1>Music Library</h1>
       <NewSongForm addNewSong={addNewSong}/>
+      <DisplaySongs parentEntries = {songs}/>
     </div>
   );
 }

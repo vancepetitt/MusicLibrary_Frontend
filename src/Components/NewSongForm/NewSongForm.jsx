@@ -18,6 +18,7 @@ const NewSongForm = (props) => {
             releaseDate: releaseDate,
             genre: genre,
         };
+        props.addNewSong(event);
         console.log(song);
         setTitle(''); //allows the form to clear text that had been entered
         setArtist('');
