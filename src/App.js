@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import NewSongForm from "./Components/NewSongForm/NewSongForm";
-import GetAllSongs from "./Components/GetAllSongs/GetAllSongs";
 import DisplaySongs from "./Components/DisplaySongs/DisplaySongs";
 
 
@@ -14,13 +13,13 @@ function App() {
     getAllSongs();
   }, [])
 
-  async function addNewSong(prop){
-    let response = await axios.post('http://127.0.0.1:8000/api/music/', prop);
+  async function createSong(prop){
+    let response = await axios.post('http://localhost:8000/api/music/', prop);
     console.log(response.data);
-    }
+  }
   
-  async function getAllSongs(){
-    let response = await axios.get('http://127.0.0.1:8000/api/music/');
+  async function getAllSongs(prop){
+    let response = await axios.get('http://localhost:8000/api/music/');
     setSongs(response.data);
     console.log(response.data);
   };
@@ -28,7 +27,7 @@ function App() {
   return (
     <div>
       <h1>Music Library</h1>
-      <NewSongForm addNewSong={addNewSong}/>
+      <NewSongForm createSong={createSong}/>
       <DisplaySongs parentEntries = {songs}/>
     </div>
   );
