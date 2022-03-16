@@ -7,7 +7,6 @@ import DisplaySongs from "./Components/DisplaySongs/DisplaySongs";
 function App() {
     
   const [songs, setSongs] = useState([]);
-  //{title:'', artist:'', album:'', releaseDate:'', genre:''}
 
   useEffect(() => {
     getAllSongs();

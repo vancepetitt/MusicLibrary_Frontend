@@ -14,7 +14,7 @@ const DisplaySongs = (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {props.ParentEntries.map((entry) => {
+                    {props.parentEntries.map((entry) => {
                         return(
                             <tr>
                                 <td>{entry.title}</td>
