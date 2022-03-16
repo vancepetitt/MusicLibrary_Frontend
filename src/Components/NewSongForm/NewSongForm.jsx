@@ -28,6 +28,7 @@ const NewSongForm = (props) => {
 
     return ( 
         <form onSubmit={addNewSong}>
+            <h2>Add Song to Library</h2>
             <label>Title: </label> {/*labels the input box */}
             <br></br>
             <input type='text' value={title} onChange={(event) => setTitle(event.target.value)}/>
